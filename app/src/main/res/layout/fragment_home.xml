@@ -73,7 +73,6 @@
                 android:layout_marginTop="36dp"
                 android:layout_marginEnd="4dp"
                 android:background="#D8D3D3"
-                android:drawableLeft=""
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Search in Daraz"
@@ -197,7 +196,6 @@
                 android:layout_height="49dp"
                 android:layout_marginStart="36dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/circularimgepromos"
                 android:paddingLeft="25dp"
                 app:layout_constraintStart_toEndOf="@+id/textView16"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />

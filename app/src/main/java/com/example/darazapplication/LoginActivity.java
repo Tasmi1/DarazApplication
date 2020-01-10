@@ -34,9 +34,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         tablayout = findViewById(R.id.tablayout);
-        viewpager = findViewById(R.id.viewpager);
-        tbpassword = findViewById(R.id.tabpassword);
-        tbsms = findViewById(R.id.tabsms);
+        viewpager = findViewById(R.id.viewPager);
+        tbpassword = findViewById(R.id.evpassword);
+        tbsms = findViewById(R.id.txtsms);
         loginPageAdapter = new LoginPageAdapter(getSupportFragmentManager(),tablayout.getTabCount());
         viewpager.setAdapter(loginPageAdapter);
         etusername = findViewById(R.id.etname);

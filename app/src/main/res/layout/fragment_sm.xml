@@ -55,7 +55,6 @@
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/send_outline_border"
         android:text="Send"
         android:textColor="@android:color/holo_red_light"
         app:layout_constraintBottom_toBottomOf="@+id/txtsms"
