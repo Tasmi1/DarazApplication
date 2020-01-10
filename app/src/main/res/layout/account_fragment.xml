@@ -39,7 +39,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:layout_marginLeft="80dp"
-            android:background="@drawable/setting"
+            android:background="@drawable/se"
 
             />
 
