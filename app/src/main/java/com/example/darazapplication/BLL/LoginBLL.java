@@ -1,13 +1,12 @@
 package com.example.darazapplication.BLL;
 
-import android.telecom.Call;
-
 import com.example.darazapplication.API.UserAPI;
 import com.example.darazapplication.ServerResponse.SignUpResponse;
 import com.example.darazapplication.URL.Url;
 
 import java.io.IOException;
 
+import retrofit2.Call;
 import retrofit2.Response;
 
 public class LoginBLL {
@@ -21,7 +20,7 @@ public class LoginBLL {
 
         try {
             Response<SignUpResponse> loginResponse = userCall.execute();
-            if (loginResponse.isSuccessful() && loginResponse.body().getStatus().equals('Login Success')) {
+            if (loginResponse.isSuccessful() && loginResponse.body().getStatus().equals("Login Success")) {
                 Url.token += loginResponse.body().getToken();
 
                 // Url.Cookie = imageResponseResponse.headers().get("Set-Cookie");

@@ -22,7 +22,7 @@ public class BottomNavigationActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_message,R.id.navigation_cart,R.id.navigation_account)
+                R.id.navigation_home, R.id.navigation_Message,R.id.navigation_Cart,R.id.navigation_Account)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this,navController, appBarConfiguration);

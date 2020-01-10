@@ -6,4 +6,175 @@
     android:layout_height="match_parent"
     tools:context=".SignupActivity">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="341dp"
+        android:layout_marginStart="52dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="161dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="92dp"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtpusername"
+            android:layout_width="298dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="147dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Password"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtpusername"
+            tools:text="Password" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="74dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/send_outline_border"
+            android:text="Send"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="@+id/etpassword"
+            app:layout_constraintEnd_toEndOf="@+id/etpassword"
+            app:layout_constraintTop_toTopOf="@+id/etpassword"
+            app:layout_constraintVertical_bias="0.388" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="146dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginBottom="28dp"
+            android:background="#FD3E07"
+            android:text="Signup"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textColor="#2E2C2C"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Full Name" />
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="298dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="Login"
+        android:textColor="#651BF7"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="232dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:text="Connect With Other Ways"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvlogin" />
+
+    <Button
+        android:id="@+id/btnfb"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="#415EA2"
+        android:drawableLeft="@drawable/fbook"
+        android:text="Facebook"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/btngoogle"
+        app:layout_constraintHorizontal_bias="0.731"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btngoogle"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:background="#555D9C"
+        android:drawableLeft="@drawable/googl"
+        android:padding="10dp"
+        android:text="Google"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

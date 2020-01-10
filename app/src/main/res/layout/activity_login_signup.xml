@@ -6,4 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".LoginSignupActivity">
 
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btncreateaccount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF5722"
+            android:hint="CREATE AN ACCOUNT"
+            android:textColorHint="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:hint="LOGIN"
+            android:textColorHint="@android:color/holo_red_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:hint="Connect with other ways"
+            android:textColorHint="#0000FF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnfb"
+        android:layout_width="162dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="412dp"
+        android:background="#415EA2"
+        android:drawableLeft="@drawable/fbook"
+        android:text="Facebook"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/btngoogle"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/btngoogle"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginEnd="36dp"
+        android:background="#555D9C"
+        android:drawableLeft="@drawable/googl"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:text="Google"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

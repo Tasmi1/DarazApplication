@@ -1,15 +1,14 @@
 package com.example.darazapplication.Adapter;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.darazapplication.R;
 import com.example.darazapplication.modalClass.Products;
@@ -60,9 +59,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         public ProductViewHolder(@NonNull View itemView)
         {
             super(itemView);
-            imgname = itemView.findViewById(R.id.imgproduct);
-            tvname = itemView.findViewById(R.id.tvname);
-            tvprice = itemView.findViewById(R.id.tvprice);
+            imgname = itemView.findViewById(R.id.img_flash);
+            tvname = itemView.findViewById(R.id.txtSold);
+            tvprice = itemView.findViewById(R.id.txtAmount);
 
         }
 
